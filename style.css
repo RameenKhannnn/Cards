@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #eeeeea;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .sec {
+    height: 400px;
+    display: flex;
+    justify-content: start;
+  }
+  .card {
+    width: 88px;
+    border-radius: 2rem;
+    background-size: cover;
+    cursor: pointer;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+    box-shadow: 0px 10px 30px -5px rgb(0, 0, 0, 0.8);
+    overflow: hidden;
+  }
+  .row {
+    display: flex;
+    color: white;
+    flex-wrap: nowrap;
+  }
+  .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  .txt {
+    color: white;
+    height: 88px;
+    width: 520px;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(30px);
+    transition-delay: 0.3s;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+  }
+  input {
+    display: none;
+  }
+  input:checked + label {
+    width: 600px;
+  }
+  input:checked + label .txt {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  .card[for="r1"] {
+    background-image: url(autumn-forest-path-orange-color-260nw-2198009967.webp);
+  }
+  .card[for="r2"] {
+    background-image: url(pexels-pixabay-33834.jpg);
+  }
+  .card[for="r3"] {
+    background-image: url(istockphoto-1394440950-612x612.jpg);
+  }
+  .card[for="r4"] {
+    background-image: url(winter.jpg);
+  }
+  
